@@ -13,10 +13,6 @@ const expenceSchema = mongoose.Schema({
         type:Number,
         required:true
     },
-    Description:String,
-    InsertedDate:{
-        type:Date,
-        Default:Date.now()
-    }
+    Description:String
 })
 module.exports=mongoose.model("Expences",expenceSchema);
